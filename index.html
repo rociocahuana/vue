@@ -12,16 +12,26 @@
 <main>
     <!-- <h1 v-show="condicion">holaa adelaida</h1>
     <h1 v-if="condicion">yo soy v-if</h1>
-    <h1 v-else> yo soy v-else</h1> -->
+    <h1 v-else> yo soy v-else</h1>
 
     <ul>
         <li v-for="per in persona" >{{per.nombre}}</li>
-    </ul>
+    </ul> -->
 
-    <h2 v-if="edad < 10">escuela</h2>
+    <!-- <h2 v-if="edad < 10">escuela</h2>
         <h2 v-else-if="edad < 15"> colegio</h2>
         <h2 v-else-if="edad < 21">universidad</h2>
-    <h2 v-else> profecional</h2>
+    <h2 v-else> profecional</h2> -->
+<template v-if="condicion">
+    <h1>tu esats conecatdo</h1>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ol>
+</template>
+    
 
     <pre>
         {{$data}}
