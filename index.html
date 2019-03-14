@@ -1,0 +1,36 @@
+.<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    
+</head>
+<body>
+<main>
+    <!-- <h1 v-show="condicion">holaa adelaida</h1>
+    <h1 v-if="condicion">yo soy v-if</h1>
+    <h1 v-else> yo soy v-else</h1> -->
+
+    <ul>
+        <li v-for="per in persona" >{{per.nombre}}</li>
+    </ul>
+
+    <h2 v-if="edad < 10">escuela</h2>
+        <h2 v-else-if="edad < 15"> colegio</h2>
+        <h2 v-else-if="edad < 21">universidad</h2>
+    <h2 v-else> profecional</h2>
+
+    <pre>
+        {{$data}}
+    </pre>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
